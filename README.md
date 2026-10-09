@@ -1,4 +1,6 @@
 **Hardware Home Projects**
+
+
 legacy 32-bit server into a modern NAS.
 # 🖥️ My IBM Xeon Server
 **A 32-bit Home-Lab**
