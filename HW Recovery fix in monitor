@@ -1,0 +1,15 @@
+HW-recovery-fixes
+
+Documenting component-level repairs, such as PCB arc tracking isolation and dielectric reinforcement on power supplies. Monitor-Repair Fixed a dead LCD that was boot-looping and arcing.
+
+What was wrong? The monitor was stuck in a boot loop. Opened it up and found carbon tracks (burnt dust/soot) near the bridge rectifier on the power board. High voltage was jumping from the board to the metal frame, causing the internal safety to trip.
+
+How I fixed it Cleaned the board: Scrubbed off all the carbon and burnt crap so the electricity wouldn't have a "path" to jump anymore.
+
+Insulation : Added some PET plastic shielding and electrical tape to create a barrier between the high-voltage side and the chassis.
+
+The LVDS issue : At first, the video was still glitching because the new insulation was pushing against the LVDS ribbon cable (the data line). I trimmed the plastic to give the cable room to breathe, and the video signal came back perfect.
+
+Results Status: Fully functional.
+
+Calibration : Dropped brightness to 30% and bumped contrast to 80% to make the colors look less "washed out" and more like an OLED.
